@@ -1,0 +1,251 @@
+/* Color Palette
+header black - #0d1117
+header highlight - #30363d
+
+text white - #c6cdd5
+main-box greyish - #14181e
+
+card backg - #7aa2ff14
+card border - #7aa2ffd9
+*/
+
+/* #region Global Styles */
+/* will be using mostly the same from proj 1 */
+html {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: grid;
+    place-items: center;
+    margin: 0;
+    padding: 0;
+    color: #c6cdd5;
+    font-family: "Oswaldo", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+body {
+    background-image: url("/images/la.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 40px;
+    font-family: "Archivo Black", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+
+}
+
+h2 {
+    margin: 0;
+    padding: 0;
+    font-family: "Archivo Black", sans-serif;
+    font-size: 30px;
+}
+
+h3 {
+    font-size: 25px;
+}
+
+p {
+    font-size: 18px;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    background: #0d1117;
+    border-bottom: 1px solid #30363d;
+    padding: 12px 16px 0;
+    overflow: auto;
+}
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* #endregion Global Styles */
+
+
+/* #region Header and Footer */
+/* Summary of Resume */
+header p {
+    font-size: 15px;
+}
+
+
+
+/* review/unused */
+/* Top row incase I want to add more later*/
+.topbar {
+    display: flex;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+.pagename {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 700;
+    color: #c9d1d9;
+}
+
+
+
+
+/* #region navbar*/
+/* The actual tab link */
+.UnderlineItem {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 10px 12px;
+    color: #c9d1d9;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+
+.UnderlineItem:hover {
+    background: rgba(255, 255, 255, 0.04);
+    border-bottom-color: #30363d;
+}
+
+.UnderlineItem.is-active {
+    font-weight: 600;
+    border-bottom-color: #163496;
+}
+
+/* Underline the actaul nav bar */
+.UnderlineNav {
+    overflow-x: auto;
+}
+
+.UnderlineItemList {
+    list-style: none;
+    display: flex;
+    gap: 8px;
+    margin: 0;
+    padding: 0;
+    border-bottom: 2px solid #21262d;
+}
+
+.UnderlineNavItem {
+    margin: 0;
+}
+/* #endregion navbar*/
+
+/* footer links and stuff */
+
+footer {
+    margin: 4px;
+    padding: 8px;
+    /* padding-bottom: 8px; */
+    font-size: 15px;
+    text-align: center;
+}
+
+.contact-info a {
+    padding: 10px;
+    display: inline-block;
+}
+
+footer h2 {
+    font-size: 20px;
+}
+
+footer p {
+    font-size: 10px;
+}
+
+.profile-header {
+    display: flex;
+    padding: 12px;
+    align-items: center;
+}
+
+.profile-img {
+    width: 150px;
+    border-radius: 50%;
+}
+/* #endregion Header and Footer */
+
+
+/* #region Main Body Things */
+.main-box {
+    background-color: #14181e;
+    max-width: 90%;     
+    min-width: 60%;
+    min-height: 100%;
+}
+
+.content-wrap {
+    background-color: #14181e;
+    border-bottom: 1px solid #30363d;
+    padding: 12px 16px 0;
+    margin-left: 16px;
+    margin-right: 16px;
+    width: 90%;
+}
+
+/* instead of .colum-wide{} */
+/* using card as one of the columns, reused from proj 1 */
+.card {
+    border-left: 4px solid #7aa2ffd9;
+    border-right: 4px solid #7aa2ffd9;
+    padding: 2px 18px;
+    background: #7aa2ff14;
+    border-radius: 12px;
+    max-width: 35%;
+    margin-right: 14px;
+    margin-bottom: 10px;
+}
+
+/* instead of .column-narrow{} */
+.card-extra {
+    background-color: transparent;
+    max-width: 30%;
+    max-height: 200px;
+}
+
+.element-main {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 16px;
+    min-width: 100%;
+}
+
+.card-text h4 {
+    margin: 0;
+}
+
+.resp-list ul {
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.resp-list li {
+    padding-top: 4px;
+}
+
+.summary {
+    max-width: 65%;
+    justify-content: flex-start;
+}
+/* #endregion Main Body Things */
